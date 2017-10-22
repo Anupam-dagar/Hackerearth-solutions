@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int i=0,L,N;
+    int W,H;
+    scanf("%d",&L);
+    scanf("%d",&N);
+    for(i=0;i<N;i++)
+{
+    scanf("%d %d",&W,&H);
+    if (L>W || L>H)
+        printf("UPLOAD ANOTHER\n");
+    else if(W==H)
+        printf("ACCEPTED\n");
+    else if (L==W && L==H)
+        printf("ACCEPTED\n");
+    else
+       printf("CROP IT\n");
+}
+    return 0;
+}
